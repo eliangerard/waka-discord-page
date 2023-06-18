@@ -1,5 +1,5 @@
 import './Card.css';
-import Copy from '../assets/copy.svg';
+import Logo from '../assets/logo.png'
 import { useRef, useEffect } from 'react';
 
 export const Card = () => {
@@ -25,7 +25,7 @@ export const Card = () => {
     return (
         <>
             <div className='card'>
-                <img src="./src/assets/logo.png" alt="" />
+                <img src={Logo} alt="" />
                 <p>¡Aquí está tu código!</p>
                 <div className='flex'>
                     <input ref={inputCode} type="text" value="..." disabled={true} />
