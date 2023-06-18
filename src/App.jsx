@@ -1,14 +1,11 @@
-import { useState } from 'react'
 import { Card } from './Components/Card'
-
+import Background from './assets/background.png'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div
         style={{
-          backgroundImage: `url(./src/assets/background.png)`,
+          backgroundImage: `url(${Background})`,
           height: "100vh",
           width: "100vw",
           zIndex: -1,
