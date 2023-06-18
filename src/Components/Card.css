@@ -1,0 +1,95 @@
+.card {
+    background-color: #ffffff66;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.card > p {
+    margin: 1rem;
+    font-weight: bold;
+    font-size: larger;
+    color: #000000AA;
+}
+.card > img {
+    height: 2rem;
+    width: 4.5rem;
+    margin: 1rem 0;
+}
+
+.flex {
+    outline: #ffffffa9 solid 2px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: #ffffffa9;
+    margin: 1rem 0;
+}
+.padding {
+    text-align: center;
+    padding: 1rem;
+    width: calc(90% - 2rem);
+}
+.flex > input {
+    padding: 1rem;
+    width: 80%;
+    overflow: hidden;
+    border: none;
+}
+.flex > input:focus {
+    outline: none;
+}
+.flex > button {
+    position: relative;
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+}
+.flex > button > div {
+    position: absolute;
+    top: -42px;
+    background-color: #6b6b6b;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    left: -10px;
+    opacity: 0%;
+    transition: opacity 150ms;
+}
+.flex > button > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #00000022;
+    transition: fill 150ms;
+}
+
+.flex > button > svg:hover {
+    cursor: pointer;
+    fill: #7bc35b;
+}
+
+code {
+    color: #7bc35b;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: large;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 70%;
+    }
+}
